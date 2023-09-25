@@ -1,0 +1,177 @@
+@media (orientation: landscape) {
+    html, body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #F4EEFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        -webkit-user-select: none;
+        user-select: none;
+        user-zoom: none;
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden
+    }
+
+    body > div {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    body > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        image-rendering: optimizeQuality;
+    }
+
+    .laptop {
+        display: block;
+    }
+    .phone {
+        display: none;
+    }
+
+    body > section {
+        display: flex;
+        align-items: center;
+        padding: max(100vh, 100vw);
+        backdrop-filter: blur(20px);
+        background-color: rgb(244, 238, 255, 0.1);
+    }
+
+    body > section > div:nth-child(1){
+        width: 60vh;
+        height: 60vh;
+        border-radius: 15px 0 0 15px;
+    }
+
+    body > section > div:nth-child(1) > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px 0 0 15px;
+        image-rendering: optimizeQuality;
+    }
+
+    body > section > div:nth-child(2){
+        width: 116vh;
+        padding: 0 2vh 0 2vh;
+        height: 60vh;
+        background-color: #606899;
+        border-radius: 0 15px 15px 0;
+        color: #DCD6F7;
+    }
+
+    body > section > div:nth-child(2) > div:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        font-size: 4vh;
+        font-weight: bolder;
+    }
+
+    body > section > div:nth-child(2) > div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1; 
+        height: 60%;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+}
+
+@media (orientation: portrait) {
+    html, body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #606899;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        -webkit-user-select: none;
+        user-select: none;
+        user-zoom: none;
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        z-index: 1;
+        backdrop-filter: blur(50px);
+        overflow: hidden
+    }
+
+    body > div {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        backdrop-filter: blur(50px);
+    }
+
+    body > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        image-rendering: optimizeQuality;
+    }
+    
+    .laptop {
+        display: none;
+    }
+    .phone {
+        display: block;
+    }
+
+    body > section{
+        display: grid;
+        place-items: center;
+        z-index: 1;
+        padding: max(100vh, 100vw);
+        backdrop-filter: blur(20px);
+        background-color: rgb(96, 104, 153, 0.5);
+    }
+
+    body > section > div:nth-child(1){
+        width: 95vw;
+        height: 80vw;
+        border-radius: 15px 15px 0 0;
+    }
+
+    body > section > div:nth-child(1) > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        image-rendering: optimizeQuality;
+    }
+
+    body > section > div:nth-child(2){
+        width: 91vw;
+        padding: 2vw;
+        height: 56vw;
+        background-color: #F4EEFF;
+        border-radius: 0 0 15px 0;
+        color: #33354c;
+    }
+
+    body > section > div:nth-child(2) > div:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        font-size: 4vw;
+        font-weight: bolder;
+    }
+
+    body > section > div:nth-child(2) > div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1; 
+        height: 80%;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+}
